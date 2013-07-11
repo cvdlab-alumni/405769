@@ -107,5 +107,5 @@ corpo = STRUCT([elementi_corpo_tot, anello]);
 
 ############################## TOTALE ##############################
 
-tavolino = STRUCT([piano_superiore, base, COLOR([0,0,0])(corpo)])
+tavolino = STRUCT([piano_superiore, base, corpo])
 VIEW(tavolino)

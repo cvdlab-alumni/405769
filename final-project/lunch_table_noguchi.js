@@ -17,8 +17,7 @@ function arc (alpha, r, R) {
 	return model;
 } 
 
-var Dom1D = INTERVALS(1)(24);
-var dom1 = PROD1x1([INTERVALS(1)(24),INTERVALS(1)(24)]);
+var dom1 = PROD1x1([INTERVALS(1)(36),INTERVALS(1)(36)]);
 
 /////////////////////////// piano superiore ///////////////////////////
 var piano_superiore_struct = EXTRUDE([0.2])(arc(2*PI, 0, 6));
@@ -63,5 +62,5 @@ var corpo = STRUCT([elementi_corpo_tot, anello]);
 
 /////////////////////////// TOTALE ///////////////////////////
 
-var tavolino = STRUCT([COLOR([1.5,1.5,1.5])(piano_superiore), COLOR([0.2,0.2,0.2])(base), COLOR([0,0,0])(corpo)]);
+var tavolino = STRUCT([COLOR([2,2,2])(piano_superiore), COLOR([0.2,0.2,0.2])(base), COLOR([0,0,0])(corpo)]);
 DRAW(tavolino);
